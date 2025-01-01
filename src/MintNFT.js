@@ -85,7 +85,7 @@ function MintNFT() {
                                 ],
                             });
                         } catch (addError) {
-                            setStatus("Failed to add Base Sepolia network");
+                            setStatus("Failed to add Ink Chain network");
                             console.error(addError);
                         }
                     } else {
@@ -153,7 +153,7 @@ function MintNFT() {
                         <p>Total Supply: {maxSupply}</p>
                         <p>Total Minted: {totalSupply} / {maxSupply}</p>
                         <p>Price - {mintPrice} ETH</p>
-                        <p>Contract: {CONTRACT_ADDRESS}</p>
+                        <p>Contract: <a href="https://explorer.inkonchain.com/address/0xeFA54c6E545DD7afCD24Cac44d1876fAB98deE03" target="_blank" rel="noopener noreferrer">0xeFA54c6E545DD7afCD24Cac44d1876fAB98deE03</a></p>
                         <p>Bridge to Ink: <a href="https://relay.link/bridge/ink?includeChainIds=57073&fromChainId=8453&fromCurrency=0x0000000000000000000000000000000000000000&toCurrency=0x0000000000000000000000000000000000000000" target="_blank" rel="noopener noreferrer">RelayLink</a></p>
                     </div>
                     <div className="mint-section">
@@ -167,6 +167,7 @@ function MintNFT() {
                     </div>
                     <div className="nft-display">
                         <h2>Check your minted NFTs on blockchain explorer</h2>
+                        <p>Blockscout: <a href="https://explorer.inkonchain.com/token/0xeFA54c6E545DD7afCD24Cac44d1876fAB98deE03" target="_blank" rel="noopener noreferrer">Link</a></p>
             
                        
                     </div>
